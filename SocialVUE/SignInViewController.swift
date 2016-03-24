@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import EZSwiftExtensions
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var IBbtnSignIn: UIButton!
+    @IBOutlet weak var IBtxtPassword: UITextField!
+    @IBOutlet weak var IBtxtEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        setupDesigns()
+    }
+    
+    func setupDesigns() {
+        IBbtnSignIn.layer.cornerRadius = IBbtnSignIn.bounds.height/2
+        IBbtnSignIn.layer.shadowRadius = 25.0
+        IBbtnSignIn.layer.shadowColor = UIColor(r: 18/255, g: 151/255, b: 147/255, a: 1.0).CGColor
+        IBbtnSignIn.layer.shadowOffset = CGSizeMake(0, 15)
+        IBbtnSignIn.layer.shadowOpacity = 0.4
+        IBbtnSignIn.layer.masksToBounds = false
+        }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

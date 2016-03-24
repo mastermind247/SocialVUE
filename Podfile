@@ -5,7 +5,6 @@
 
 target 'SocialVUE' do
 pod 'EZSwiftExtensions'
-pod 'Alamofire'
 pod 'Canvas'
 end
 
