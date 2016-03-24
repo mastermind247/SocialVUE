@@ -48,11 +48,17 @@
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iQz-gN-Giz" id="sMi-g7-rOt"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="   Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-7f-HFX">
                                 <rect key="frame" x="43" y="336" width="288" height="50"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iQz-gN-Giz" id="JjY-En-qXn"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-HY-JtW">
                                 <rect key="frame" x="228" y="396" width="103" height="25"/>
@@ -100,13 +106,14 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="IBbtnSignIn" destination="hmW-Sq-che" id="fbt-T1-JBX"/>
+                        <outlet property="IBlogoTopConstraint" destination="uCK-3S-ETv" id="PIq-zy-npk"/>
                         <outlet property="IBtxtEmail" destination="I3d-rT-U87" id="abQ-rk-1Iz"/>
                         <outlet property="IBtxtPassword" destination="GDP-7f-HFX" id="eIq-Pf-3s2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn1-G1-d9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591.5" y="-63.5"/>
+            <point key="canvasLocation" x="903" y="62"/>
         </scene>
     </scenes>
     <resources>

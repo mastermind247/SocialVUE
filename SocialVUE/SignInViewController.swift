@@ -9,11 +9,14 @@
 import UIKit
 import EZSwiftExtensions
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var IBlogoTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var IBbtnSignIn: UIButton!
     @IBOutlet weak var IBtxtPassword: UITextField!
     @IBOutlet weak var IBtxtEmail: UITextField!
+    
+    var topConstraintConstant:CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,7 @@ class SignInViewController: UIViewController {
     }
     
     func setupDesigns() {
+        topConstraintConstant = IBlogoTopConstraint.constant
         IBbtnSignIn.layer.cornerRadius = IBbtnSignIn.bounds.height/2
         IBbtnSignIn.layer.shadowRadius = 25.0
         IBbtnSignIn.layer.shadowColor = UIColor(r: 18/255, g: 151/255, b: 147/255, a: 1.0).CGColor
@@ -37,7 +41,26 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    // MARK: - Text FieldDelegates
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        self.IBlogoTopConstraint.constant = 0
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.IBlogoTopConstraint.constant = topConstraintConstant!
+        self.view.endEditing(true)
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.view.layoutIfNeeded()
+        }
+        return true
+    }
+    
+    
     /*
     // MARK: - Navigation
 
