@@ -1,0 +1,6 @@
+framework module Pods_SocialVUE {
+  umbrella header "Pods-SocialVUE-umbrella.h"
+
+  export *
+  module * { export * }
+}
