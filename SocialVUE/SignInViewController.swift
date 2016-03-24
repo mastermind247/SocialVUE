@@ -41,11 +41,20 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if IBtxtEmail.isFirstResponder() || IBtxtPassword.isFirstResponder() {
+            self.view.endEditing(true)
+            self.IBlogoTopConstraint.constant = topConstraintConstant!
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
     
     // MARK: - Text FieldDelegates
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        self.IBlogoTopConstraint.constant = 0
+        self.IBlogoTopConstraint.constant = -20
         UIView.animateWithDuration(0.3) { () -> Void in
             self.view.layoutIfNeeded()
         }
