@@ -1,13 +1,50 @@
 PODS:
+  - Alamofire (3.3.0)
+  - AsyncDisplayKit (1.9.7.1):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.7.1)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.7.1)
+  - AsyncDisplayKit/PINRemoteImage (1.9.7.1):
+    - AsyncDisplayKit/ASDealloc2MainObject
+    - PINRemoteImage/iOS (>= 2.1.2)
   - Canvas (0.1.2)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
   - EZSwiftExtensions (1.2.3)
+  - HanekeSwift (0.10.1)
+  - IBAnimatable (2.0)
+  - PINCache (2.2.2)
+  - PINRemoteImage/Core (2.1.2):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/iOS (2.1.2):
+    - PINRemoteImage/Core
+  - PureLayout (3.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - AsyncDisplayKit (~> 1.9)
   - Canvas
+  - CocoaLumberjack (~> 2.2)
   - EZSwiftExtensions
+  - HanekeSwift (~> 0.10)
+  - IBAnimatable (~> 2.0)
+  - PureLayout (~> 3.0)
 
 SPEC CHECKSUMS:
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  AsyncDisplayKit: 2b52f841e384e7326d4f59323b1bf35d00696e17
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   EZSwiftExtensions: 3a16a8e8e8394bc18a70e114e7fa44f8264138b5
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  IBAnimatable: c5c5e024d4dff879487f401abd52d0dd68765dd0
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
+  PINRemoteImage: 2ce3f1fcc52f0360a3821f91f1a1bc653c5d2338
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
 
 COCOAPODS: 0.39.0

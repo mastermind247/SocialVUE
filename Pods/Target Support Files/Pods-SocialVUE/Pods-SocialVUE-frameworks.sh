@@ -84,10 +84,26 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SocialVUE/Alamofire.framework"
+  install_framework "Pods-SocialVUE/AsyncDisplayKit.framework"
   install_framework "Pods-SocialVUE/Canvas.framework"
+  install_framework "Pods-SocialVUE/CocoaLumberjack.framework"
   install_framework "Pods-SocialVUE/EZSwiftExtensions.framework"
+  install_framework "Pods-SocialVUE/Haneke.framework"
+  install_framework "Pods-SocialVUE/IBAnimatable.framework"
+  install_framework "Pods-SocialVUE/PINCache.framework"
+  install_framework "Pods-SocialVUE/PINRemoteImage.framework"
+  install_framework "Pods-SocialVUE/PureLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SocialVUE/Alamofire.framework"
+  install_framework "Pods-SocialVUE/AsyncDisplayKit.framework"
   install_framework "Pods-SocialVUE/Canvas.framework"
+  install_framework "Pods-SocialVUE/CocoaLumberjack.framework"
   install_framework "Pods-SocialVUE/EZSwiftExtensions.framework"
+  install_framework "Pods-SocialVUE/Haneke.framework"
+  install_framework "Pods-SocialVUE/IBAnimatable.framework"
+  install_framework "Pods-SocialVUE/PINCache.framework"
+  install_framework "Pods-SocialVUE/PINRemoteImage.framework"
+  install_framework "Pods-SocialVUE/PureLayout.framework"
 fi
