@@ -41,7 +41,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="   Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-rT-U87">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="   Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-rT-U87" customClass="EmailTF" customModule="SocialVUE" customModuleProvider="target">
                                 <rect key="frame" x="43" y="287" width="288" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="height" multiplier="144:25" id="4Cb-Ok-PYv"/>
@@ -52,7 +52,7 @@
                                     <outlet property="delegate" destination="iQz-gN-Giz" id="sMi-g7-rOt"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="   Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-7f-HFX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="   Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-7f-HFX" customClass="PasswordTF" customModule="SocialVUE" customModuleProvider="target">
                                 <rect key="frame" x="43" y="336" width="288" height="50"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
