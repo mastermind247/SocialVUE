@@ -21,7 +21,7 @@ class CustomRoundedTextField: UITextField {
     @IBInspectable var BRRCorner:Bool = false
     
     
-    required public init?(coder aDecoder: NSCoder) {
+    required internal init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -29,7 +29,7 @@ class CustomRoundedTextField: UITextField {
         super.init(frame: frame)
     }
     
-    override public func drawRect(rect: CGRect) {
+    override internal func drawRect(rect: CGRect) {
         addBorderFieldRect()
     }
     

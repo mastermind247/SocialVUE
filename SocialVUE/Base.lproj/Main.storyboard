@@ -48,7 +48,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="BLRCorner" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="BRRCorner" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lCornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lWidth">
                                         <real key="value" value="1"/>
@@ -59,12 +59,14 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="sColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="TLRCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="TRRCorner" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="iQz-gN-Giz" id="JjY-En-qXn"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-HY-JtW">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-HY-JtW">
                                 <rect key="frame" x="228" y="396" width="103" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="GoM-et-XST"/>
@@ -75,7 +77,7 @@
                                     <color key="titleColor" red="0.35686274509803922" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-Sq-che">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-Sq-che">
                                 <rect key="frame" x="43" y="436" width="288" height="50"/>
                                 <color key="backgroundColor" red="0.070588235294117646" green="0.59215686274509804" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -86,7 +88,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="   Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-rT-U87" customClass="CustomRoundedTextField" customModule="SocialVUE" customModuleProvider="target">
                                 <rect key="frame" x="43" y="287" width="288" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="height" multiplier="144:25" id="4Cb-Ok-PYv"/>
+                                    <constraint firstAttribute="height" constant="50" id="C1Q-ge-82d"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -97,7 +99,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lCornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="sColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,6 +107,8 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="lColor">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="BLRCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="BRRCorner" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="iQz-gN-Giz" id="sMi-g7-rOt"/>
@@ -114,24 +118,18 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PcH-xa-lVv" firstAttribute="leading" secondItem="ZKg-ZA-R9K" secondAttribute="leadingMargin" constant="84" id="1in-mt-kl5"/>
-                            <constraint firstItem="hmW-Sq-che" firstAttribute="top" secondItem="GDP-7f-HFX" secondAttribute="bottom" constant="50" id="4AB-oN-cvb"/>
-                            <constraint firstItem="Ryk-HY-JtW" firstAttribute="top" secondItem="GDP-7f-HFX" secondAttribute="bottom" constant="10" id="8gV-ZR-c8S"/>
-                            <constraint firstItem="hmW-Sq-che" firstAttribute="height" secondItem="I3d-rT-U87" secondAttribute="height" id="AHX-80-VR2"/>
+                            <constraint firstItem="I3d-rT-U87" firstAttribute="leading" secondItem="ZKg-ZA-R9K" secondAttribute="leading" constant="43" id="1ku-tN-OgA"/>
+                            <constraint firstItem="GDP-7f-HFX" firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="width" id="1wW-ET-yUj"/>
+                            <constraint firstItem="GDP-7f-HFX" firstAttribute="centerX" secondItem="I3d-rT-U87" secondAttribute="centerX" id="LJt-q6-oX1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PcH-xa-lVv" secondAttribute="trailing" constant="85" id="N1Y-rO-ONK"/>
-                            <constraint firstItem="I3d-rT-U87" firstAttribute="top" secondItem="PcH-xa-lVv" secondAttribute="bottom" constant="22" id="RRh-zy-6eb"/>
-                            <constraint firstItem="GDP-7f-HFX" firstAttribute="centerX" secondItem="I3d-rT-U87" secondAttribute="centerX" id="Ric-UB-ciM"/>
-                            <constraint firstItem="GDP-7f-HFX" firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="width" id="Sfj-5C-jag"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ulg-yC-P2w" secondAttribute="trailing" constant="62" id="U0a-tW-MIO"/>
-                            <constraint firstItem="hmW-Sq-che" firstAttribute="centerX" secondItem="GDP-7f-HFX" secondAttribute="centerX" id="UUo-yW-9P3"/>
-                            <constraint firstItem="I3d-rT-U87" firstAttribute="leading" secondItem="ZKg-ZA-R9K" secondAttribute="leading" constant="43" id="cjG-QE-A8c"/>
-                            <constraint firstItem="GDP-7f-HFX" firstAttribute="top" secondItem="I3d-rT-U87" secondAttribute="bottom" constant="-1" id="lm9-7Q-c49"/>
+                            <constraint firstAttribute="trailing" secondItem="I3d-rT-U87" secondAttribute="trailing" constant="44" id="gvp-KY-lAt"/>
+                            <constraint firstItem="GDP-7f-HFX" firstAttribute="top" secondItem="I3d-rT-U87" secondAttribute="bottom" constant="-1" id="gz4-XK-I7P"/>
+                            <constraint firstItem="GDP-7f-HFX" firstAttribute="height" secondItem="I3d-rT-U87" secondAttribute="height" id="i9e-fZ-Cgc"/>
                             <constraint firstItem="Ulg-yC-P2w" firstAttribute="leading" secondItem="ZKg-ZA-R9K" secondAttribute="leadingMargin" constant="61" id="n2k-Tb-z79"/>
-                            <constraint firstItem="Ryk-HY-JtW" firstAttribute="trailing" secondItem="GDP-7f-HFX" secondAttribute="trailing" id="qgl-eF-VAf"/>
-                            <constraint firstAttribute="trailing" secondItem="I3d-rT-U87" secondAttribute="trailing" constant="44" id="rV2-Fk-KdQ"/>
                             <constraint firstItem="PcH-xa-lVv" firstAttribute="top" secondItem="Ulg-yC-P2w" secondAttribute="bottom" constant="72" id="s7u-D1-enW"/>
                             <constraint firstItem="Ulg-yC-P2w" firstAttribute="top" secondItem="41L-z0-lAo" secondAttribute="bottom" constant="84" id="uCK-3S-ETv"/>
-                            <constraint firstItem="GDP-7f-HFX" firstAttribute="height" secondItem="I3d-rT-U87" secondAttribute="height" id="uWV-hP-8LC"/>
-                            <constraint firstItem="hmW-Sq-che" firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="width" id="xdk-rG-vsK"/>
+                            <constraint firstItem="I3d-rT-U87" firstAttribute="top" secondItem="PcH-xa-lVv" secondAttribute="bottom" constant="22" id="zmc-Df-uWz"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
