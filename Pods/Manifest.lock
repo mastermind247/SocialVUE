@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (3.3.0)
   - AsyncDisplayKit (1.9.7.1):
     - AsyncDisplayKit/PINRemoteImage (= 1.9.7.1)
   - AsyncDisplayKit/ASDealloc2MainObject (1.9.7.1)
@@ -26,7 +25,6 @@ PODS:
   - PureLayout (3.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.3)
   - AsyncDisplayKit (~> 1.9)
   - Canvas
   - CocoaLumberjack (~> 2.2)
@@ -36,7 +34,6 @@ DEPENDENCIES:
   - PureLayout (~> 3.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
   AsyncDisplayKit: 2b52f841e384e7326d4f59323b1bf35d00696e17
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
