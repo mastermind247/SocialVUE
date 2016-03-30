@@ -19,7 +19,8 @@ class CustomRoundedTextField: UITextField {
     @IBInspectable var TRRCorner:Bool = false
     @IBInspectable var BLRCorner:Bool = false
     @IBInspectable var BRRCorner:Bool = false
-    
+    @IBInspectable var XInset:CGFloat = 10
+    @IBInspectable var YInset:CGFloat = 10
     
     required internal init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,11 +35,11 @@ class CustomRoundedTextField: UITextField {
     }
     
     override func textRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRectInset(bounds, 10, 0)
+        return CGRectInset(bounds, XInset, 0)
     }
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRectInset(bounds, 10, 0)
+        return CGRectInset(bounds, YInset, 0)
     }
     
     func addBorderFieldRect() {

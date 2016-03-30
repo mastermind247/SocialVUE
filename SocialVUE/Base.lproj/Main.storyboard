@@ -122,6 +122,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="BLRCorner" value="NO"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="BRRCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="XInset">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="iQz-gN-Giz" id="sMi-g7-rOt"/>
@@ -148,6 +151,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="TLRCorner" value="NO"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="TRRCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="XInset">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="iQz-gN-Giz" id="JjY-En-qXn"/>
