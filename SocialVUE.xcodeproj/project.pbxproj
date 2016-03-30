@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		33F0BCBE07844587A29A8F88 /* Pods_SocialVUE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2F3F1D93F88C8E3AEC1FCD /* Pods_SocialVUE.framework */; };
+		60411EA41CA966970013ACE7 /* CustomRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60411EA31CA966970013ACE7 /* CustomRoundedTextField.swift */; };
 		D5A633871CA3E882001AADEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A633861CA3E882001AADEE /* AppDelegate.swift */; };
 		D5A6338C1CA3E882001AADEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A6338A1CA3E882001AADEE /* Main.storyboard */; };
 		D5A6338E1CA3E882001AADEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A6338D1CA3E882001AADEE /* Assets.xcassets */; };
 		D5A633911CA3E882001AADEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A6338F1CA3E882001AADEE /* LaunchScreen.storyboard */; };
 		D5A633991CA3E8EC001AADEE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A633981CA3E8EC001AADEE /* SignInViewController.swift */; };
-		D5B02F031CA7117E00508106 /* EmailTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B02F021CA7117E00508106 /* EmailTF.swift */; };
-		D5B02F051CA711DA00508106 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B02F041CA711DA00508106 /* EmailTextField.swift */; };
-		D5B02F071CA7130000508106 /* PasswordTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B02F061CA7130000508106 /* PasswordTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60411EA31CA966970013ACE7 /* CustomRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundedTextField.swift; sourceTree = "<group>"; };
 		8C2F3F1D93F88C8E3AEC1FCD /* Pods_SocialVUE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialVUE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A14E902963C6C16FD6802D /* Pods-SocialVUE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialVUE.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialVUE/Pods-SocialVUE.release.xcconfig"; sourceTree = "<group>"; };
 		B91DA25209AF22B85F62BF19 /* Pods-SocialVUE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialVUE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialVUE/Pods-SocialVUE.debug.xcconfig"; sourceTree = "<group>"; };
@@ -29,9 +28,6 @@
 		D5A633901CA3E882001AADEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5A633921CA3E882001AADEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A633981CA3E8EC001AADEE /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		D5B02F021CA7117E00508106 /* EmailTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTF.swift; sourceTree = "<group>"; };
-		D5B02F041CA711DA00508106 /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
-		D5B02F061CA7130000508106 /* PasswordTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +82,8 @@
 			children = (
 				D5A633861CA3E882001AADEE /* AppDelegate.swift */,
 				D5A6338A1CA3E882001AADEE /* Main.storyboard */,
-				D5B02F061CA7130000508106 /* PasswordTF.swift */,
+				60411EA31CA966970013ACE7 /* CustomRoundedTextField.swift */,
 				D5A633981CA3E8EC001AADEE /* SignInViewController.swift */,
-				D5B02F021CA7117E00508106 /* EmailTF.swift */,
-				D5B02F041CA711DA00508106 /* EmailTextField.swift */,
 				D5A6338D1CA3E882001AADEE /* Assets.xcassets */,
 				D5A6338F1CA3E882001AADEE /* LaunchScreen.storyboard */,
 				D5A633921CA3E882001AADEE /* Info.plist */,
@@ -132,7 +126,6 @@
 				TargetAttributes = {
 					D5A633821CA3E882001AADEE = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 9MXB9EHJSS;
 					};
 				};
 			};
@@ -220,11 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B02F051CA711DA00508106 /* EmailTextField.swift in Sources */,
 				D5A633991CA3E8EC001AADEE /* SignInViewController.swift in Sources */,
+				60411EA41CA966970013ACE7 /* CustomRoundedTextField.swift in Sources */,
 				D5A633871CA3E882001AADEE /* AppDelegate.swift in Sources */,
-				D5B02F031CA7117E00508106 /* EmailTF.swift in Sources */,
-				D5B02F071CA7130000508106 /* PasswordTF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
