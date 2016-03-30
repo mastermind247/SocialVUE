@@ -33,6 +33,14 @@ class CustomRoundedTextField: UITextField {
         addBorderFieldRect()
     }
     
+    override func textRectForBounds(bounds: CGRect) -> CGRect {
+        return CGRectInset(bounds, 10, 0)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect {
+        return CGRectInset(bounds, 10, 0)
+    }
+    
     func addBorderFieldRect() {
         let rectanglePath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: [
             TLRCorner ? .TopLeft : [],

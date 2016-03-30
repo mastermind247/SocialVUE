@@ -8,11 +8,12 @@
 
 import UIKit
 import EZSwiftExtensions
+import IBAnimatable
 
 class SignInViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var IBlogoTopConstraint: NSLayoutConstraint!
-    @IBOutlet weak var IBbtnSignIn: UIButton!
+    @IBOutlet weak var IBbtnSignIn: AnimatableButton!
     @IBOutlet weak var IBtxtPassword: UITextField!
     @IBOutlet weak var IBtxtEmail: UITextField!
     
@@ -61,23 +62,24 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.IBlogoTopConstraint.constant = topConstraintConstant!
-        self.view.endEditing(true)
-        UIView.animateWithDuration(0.3) { () -> Void in
-            self.view.layoutIfNeeded()
+        if IBtxtEmail.isFirstResponder() == true {
+            IBtxtPassword.becomeFirstResponder()
+        }
+        else {
+            self.IBlogoTopConstraint.constant = topConstraintConstant!
+            self.view.endEditing(true)
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.view.layoutIfNeeded()
+            }
         }
         return true
     }
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func IBbtnSignInTap(sender: AnyObject) {
+        if IBtxtEmail.text?.characters.isEmpty == true || IBtxtPassword.text?.characters.isEmpty == true {
+            IBbtnSignIn.animationType = "Shake"
+            IBbtnSignIn.duration = 0.4
+            IBbtnSignIn.animate()
+        }
     }
-    */
-
 }
