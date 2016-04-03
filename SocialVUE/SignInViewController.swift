@@ -29,13 +29,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
     
     func setupDesigns() {
         topConstraintConstant = IBlogoTopConstraint.constant
-        IBbtnSignIn.layer.cornerRadius = IBbtnSignIn.bounds.height/2
-        IBbtnSignIn.layer.shadowRadius = 25.0
-        IBbtnSignIn.layer.shadowColor = UIColor(r: 18/255, g: 151/255, b: 147/255, a: 1.0).CGColor
-        IBbtnSignIn.layer.shadowOffset = CGSizeMake(0, 15)
-        IBbtnSignIn.layer.shadowOpacity = 0.4
-        IBbtnSignIn.layer.masksToBounds = false
-        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

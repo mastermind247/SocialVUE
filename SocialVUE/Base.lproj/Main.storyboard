@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iQz-gN-Giz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lEX-02-IOW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,17 +9,17 @@
         <!--Sign In View Controller-->
         <scene sceneID="1ef-MI-vTi">
             <objects>
-                <viewController id="iQz-gN-Giz" customClass="SignInViewController" customModule="SocialVUE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInController" id="iQz-gN-Giz" customClass="SignInViewController" customModule="SocialVUE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="41L-z0-lAo"/>
                         <viewControllerLayoutGuide type="bottom" id="B3i-yd-8VK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZKg-ZA-R9K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ulg-yC-P2w" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                <rect key="frame" x="77" y="104" width="220" height="59"/>
+                                <rect key="frame" x="77" y="104" width="165" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ulg-yC-P2w" secondAttribute="height" multiplier="212:57" id="iOc-Vd-jSz"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-xa-lVv" customClass="AnimatableLabel" customModule="IBAnimatable">
-                                <rect key="frame" x="100" y="235" width="174" height="30"/>
+                                <rect key="frame" x="100" y="220" width="119" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PcH-xa-lVv" secondAttribute="height" multiplier="55:7" constant="-61.857142857142833" id="Qjj-2e-iWH"/>
                                 </constraints>
@@ -58,7 +58,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-HY-JtW" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="228" y="396" width="103" height="25"/>
+                                <rect key="frame" x="173" y="374" width="103" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="GoM-et-XST"/>
                                     <constraint firstAttribute="height" constant="25" id="W0G-61-ozj"/>
@@ -75,7 +75,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-Sq-che" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="43" y="436" width="288" height="50"/>
+                                <rect key="frame" x="43" y="414" width="233" height="50"/>
                                 <color key="backgroundColor" red="0.070588235294117646" green="0.59215686274509804" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Sign In">
@@ -90,16 +90,31 @@
                                         <real key="value" value="1.2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="SlideInUp"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.070588235294117646" green="0.59215686274509804" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="15"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="IBbtnSignInTap:" destination="iQz-gN-Giz" eventType="touchUpInside" id="cqb-qc-cyA"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwu-08-58o" userLabel="FieldView" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="43" y="287" width="288" height="99"/>
+                                <rect key="frame" x="43" y="265" width="233" height="99"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-rT-U87" customClass="CustomRoundedTextField" customModule="SocialVUE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="C1Q-ge-82d"/>
                                         </constraints>
@@ -131,11 +146,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-7f-HFX" customClass="CustomRoundedTextField" customModule="SocialVUE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="288" height="50"/>
+                                        <rect key="frame" x="0.0" y="49" width="233" height="50"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="BLRCorner" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="BRRCorner" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="lCornerRadius">
                                                 <real key="value" value="8"/>
@@ -154,6 +168,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="XInset">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="BLRCorner" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="iQz-gN-Giz" id="JjY-En-qXn"/>
@@ -165,10 +180,11 @@
                                     <constraint firstItem="I3d-rT-U87" firstAttribute="leading" secondItem="Pwu-08-58o" secondAttribute="leading" id="0GA-sw-bd7"/>
                                     <constraint firstItem="I3d-rT-U87" firstAttribute="top" secondItem="Pwu-08-58o" secondAttribute="top" id="17T-a9-wbM"/>
                                     <constraint firstItem="GDP-7f-HFX" firstAttribute="top" secondItem="I3d-rT-U87" secondAttribute="bottom" constant="-1" id="3vi-Qj-h2A"/>
-                                    <constraint firstAttribute="width" secondItem="Pwu-08-58o" secondAttribute="height" multiplier="32:11" id="GsU-Mr-85e"/>
+                                    <constraint firstItem="GDP-7f-HFX" firstAttribute="width" secondItem="I3d-rT-U87" secondAttribute="width" id="7wn-st-dIK"/>
                                     <constraint firstAttribute="trailing" secondItem="I3d-rT-U87" secondAttribute="trailing" id="WAC-Mi-UFB"/>
                                     <constraint firstItem="GDP-7f-HFX" firstAttribute="leading" secondItem="Pwu-08-58o" secondAttribute="leading" id="bMj-f3-MI5"/>
                                     <constraint firstAttribute="trailing" secondItem="GDP-7f-HFX" secondAttribute="trailing" id="da8-3d-FOo"/>
+                                    <constraint firstItem="GDP-7f-HFX" firstAttribute="height" secondItem="I3d-rT-U87" secondAttribute="height" id="j1F-vg-tvW"/>
                                     <constraint firstAttribute="bottom" secondItem="GDP-7f-HFX" secondAttribute="bottom" id="zqd-BD-lOD"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -202,7 +218,7 @@
                             <constraint firstItem="Ulg-yC-P2w" firstAttribute="top" secondItem="41L-z0-lAo" secondAttribute="bottom" constant="84" id="uCK-3S-ETv"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="IBbtnSignIn" destination="hmW-Sq-che" id="fbt-T1-JBX"/>
                         <outlet property="IBlogoTopConstraint" destination="uCK-3S-ETv" id="PIq-zy-npk"/>
@@ -212,7 +228,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn1-G1-d9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902.5" y="61.5"/>
+            <point key="canvasLocation" x="1144" y="61"/>
+        </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="BIj-wA-jxE">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenController" id="lEX-02-IOW" customClass="SplashScreenViewController" customModule="SocialVUE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vXi-JB-8Ho"/>
+                        <viewControllerLayoutGuide type="bottom" id="YLs-oD-0jp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFm-rD-UdD" customClass="SplashScreenView" customModule="SocialVUE" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="IBviewSplashScreen" destination="fFm-rD-UdD" id="kgP-Jt-vtt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlg-ur-IJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="61"/>
         </scene>
     </scenes>
     <resources>

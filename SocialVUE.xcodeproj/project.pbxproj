@@ -14,6 +14,9 @@
 		D5A6338E1CA3E882001AADEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A6338D1CA3E882001AADEE /* Assets.xcassets */; };
 		D5A633911CA3E882001AADEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A6338F1CA3E882001AADEE /* LaunchScreen.storyboard */; };
 		D5A633991CA3E8EC001AADEE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A633981CA3E8EC001AADEE /* SignInViewController.swift */; };
+		D5A71F7B1CB1478F0070A4BC /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A71F791CB1478F0070A4BC /* QCMethod.swift */; };
+		D5A71F7C1CB1478F0070A4BC /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A71F7A1CB1478F0070A4BC /* SplashScreenView.swift */; };
+		D5A71F7E1CB14D0E0070A4BC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A71F7D1CB14D0E0070A4BC /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		D5A633901CA3E882001AADEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5A633921CA3E882001AADEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A633981CA3E8EC001AADEE /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D5A71F791CB1478F0070A4BC /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
+		D5A71F7A1CB1478F0070A4BC /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		D5A71F7D1CB14D0E0070A4BC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				D5A633861CA3E882001AADEE /* AppDelegate.swift */,
+				D5A71F791CB1478F0070A4BC /* QCMethod.swift */,
+				D5A71F7A1CB1478F0070A4BC /* SplashScreenView.swift */,
 				D5A6338A1CA3E882001AADEE /* Main.storyboard */,
+				D5A71F7D1CB14D0E0070A4BC /* SplashScreenViewController.swift */,
 				60411EA31CA966970013ACE7 /* CustomRoundedTextField.swift */,
 				D5A633981CA3E8EC001AADEE /* SignInViewController.swift */,
 				D5A6338D1CA3E882001AADEE /* Assets.xcassets */,
@@ -215,6 +224,9 @@
 			files = (
 				D5A633991CA3E8EC001AADEE /* SignInViewController.swift in Sources */,
 				60411EA41CA966970013ACE7 /* CustomRoundedTextField.swift in Sources */,
+				D5A71F7E1CB14D0E0070A4BC /* SplashScreenViewController.swift in Sources */,
+				D5A71F7C1CB1478F0070A4BC /* SplashScreenView.swift in Sources */,
+				D5A71F7B1CB1478F0070A4BC /* QCMethod.swift in Sources */,
 				D5A633871CA3E882001AADEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
